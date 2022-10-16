@@ -6,16 +6,16 @@
 
 int main(void)
 {
-	int tens;
 	int ones;
+	int tens;
 
-	for (tens = '0'; tens <= '9'; tens++) /*print tens place*/
+	for (tens = '0'; tens <= '9'; tens++) /*incerement tens*/
 	{
-		for (ones = '0'; ones <= '9'; ones++) /*print ones place*/
+		for (ones = (tens + 1); ones <= '9'; ones++) /*one's ten+1*/
 		{
 			putchar(tens);
 			putchar(ones);
-			if (!(tens == '9' && ones == '9')) /*skip comma at end*/
+			if (!(tens != '8' || ones != '9')) /*print commas*/
 			{
 				putchar(',');
 				putchar(' ');
