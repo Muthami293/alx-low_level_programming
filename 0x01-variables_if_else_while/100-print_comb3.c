@@ -1,21 +1,23 @@
 #include <stdio.h>
+
 /**
- * main - print 00 to 99 with no dublicate digits or combos: no 11, no 10 (01)
- * Return: Always 0 (Success)
+ * main - print a combo of teo digits
+ *
+ * Return: Always 0
  */
 
 int main(void)
 {
-	int ones;
-	int tens;
+	int i, b;
 
-	for (tens = '0'; tens <= '9'; tens++) /*incerement tens*/
+	for (i = '0'; i <= '9'; i++)
 	{
-		for (ones = (tens + 1); ones <= '9'; ones++) /*one's ten+1*/
+		for (b = (i + 1); b <= '9'; b++)
 		{
-			putchar(tens);
-			putchar(ones);
-			if (!(tens != '8' || ones != '9')) /*print commas*/
+			putchar(i);
+			putchar(b);
+			
+			if (i != '8' || b !='9')
 			{
 				putchar(',');
 				putchar(' ');
@@ -23,6 +25,6 @@ int main(void)
 		}
 	}
 	putchar('\n');
-
+	
 	return (0);
 }
