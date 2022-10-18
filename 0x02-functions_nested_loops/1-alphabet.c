@@ -2,18 +2,17 @@
 
 
 /**
- * print_alphabet - print all alphabets in lowercase
- * Return: void
+ * print_alphabet - Prints all alphabets in lowercase
+ * Return: void is returned
  */
 
 void print_alphabet(void)
 {
-	char la;
+	char c;
 
-	for (la = 'a'; la <= 'z'; la++)
+	for (c = 'a'; c <= 'z'; c++)
 	{
-		_putchar(la);
-		la++;
+		_putchar(c);
 	}
 	_putchar('\n');
 }

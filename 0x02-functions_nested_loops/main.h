@@ -12,11 +12,11 @@
 int _putchar(char c);
 
 /**
- * print_alphabet- Prints al alphabets in lowercase
+ * print_alphabet - Prints all alphabets in lowercase
  * Return: void is returned
  */
 
-void print_alpabet(void);
+void print_alphabet(void);
 
 /**
  * print_alphabet_x10 - Prints all alphabets ten times
