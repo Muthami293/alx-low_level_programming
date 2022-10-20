@@ -4,15 +4,13 @@
 /**
  * main - causes an infinite loop
  * Return: 0
- *
- * printf("infinite loop incoming : (\n")
  */
 
 int main(void)
 {
 	int i;
 
-	printf("infinite loop incoming : (\n");
+	printf("infinite loop incoming : (\n"); /* don't delete it! */
 
 	i = 0;
 
