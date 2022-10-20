@@ -1,9 +1,9 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - prints the largest of 3 numbers
- * Return: larget
+ * Return: largest
  */
 
 int main(void)
@@ -33,5 +33,5 @@ int main(void)
 	}
 
 
-	return (0);
+	return (largest);
 }
