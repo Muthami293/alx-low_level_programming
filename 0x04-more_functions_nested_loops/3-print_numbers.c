@@ -1,14 +1,21 @@
 #include "main.h"
 
 /**
- * main - checks the code
- * Return: Always 0
- */
+  * print_numbers - Print all numbers from 0 to 9
+  *
+  * Return: void
+  */
 
-int main(void)
+void print_numbers(void)
 {
-        print_numbers();
+	char c;
 
-        return (0);
+	for (c = '0'; c <= '9'; c++)
+	{
+		_putchar(c);
+	}
+
+	_putchar('\n');
+
 }
 
