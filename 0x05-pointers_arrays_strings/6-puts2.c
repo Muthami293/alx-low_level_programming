@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
-  * puts2 - print every other number
-  * @str: string to check
-  * Return: void
-  */
+ *  puts2- prints every other number
+ *  @str: string to check
+ *  Return: void
+ */
 
 void puts2(char *str)
 {
