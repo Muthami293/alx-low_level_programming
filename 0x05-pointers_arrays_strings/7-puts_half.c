@@ -1,35 +1,24 @@
 #include "main.h"
 
-/*
- * puts_half - prints half of the string
- * @str: string to break to half
- * Return: void
+/**
+ * puts_half - Prints half of a string.
+ * @str: The string to be printed.
  */
-
 void puts_half(char *str)
 {
-	int index = 0;
-	int i;
+	int index = 0, len = 0, n;
 
-	for (index = 0; str[index]; index++)
-		;
-	/* get odd lengths */
+	while (str[index++])
+		len++;
 
-	if (index % 2 == 1)
-	{
-		i = (index - 1) / 2;
-		i += 1;
-	}
+	if ((len % 2) == 0)
+		n = len / 2;
 
 	else
-	{
-		i = index / 2;
-	}
+		n = (len + 1) / 2;
 
-	for (; i < index; i++)
-	{
-		_putchar(str[i]);
-	}
+	for (index = n; index < len; index++)
+		_putchar(str[index]);
 
 	_putchar('\n');
 }
