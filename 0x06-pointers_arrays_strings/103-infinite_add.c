@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
   * infinite_add - two characters from buffer of size r
   * @n1: character 1
