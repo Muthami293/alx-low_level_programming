@@ -1,28 +1,30 @@
 #include "main.h"
 
 /**
-  * _strncpy - copy string with n bytes
-  * @dest: destination of the string
-  * @src: source of the string
-  * @n : n bytes
-  * Return: string
+  * _strncat - concatenate two strings limited by n bytes
+  * @dest: pointer to destination
+  * @src: pointer to source
+  * @n: size of the concatenated string
+  * Return: concatenated string
   */
 
-char *_strncpy(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
-	int i;
+	int i = 0;
+	int j = 0;
 
-	for (i = 0; *(src + i) != '\0' && i < n; i++)
-	{
-		*(dest + i) = *(src + i);
-	}
-
-	while (i < n)
-	{
-		*(dest + i) = '\0';
+	while (*(dest + i))
 		i++;
+
+	while (*(src + j) != *(src + n))
+	{
+		*(dest + i) = *(src + j);
+		i++;
+		j++;
 	}
+
+	*(dest + i) = '\0';
+
 
 	return (dest);
-
 }
