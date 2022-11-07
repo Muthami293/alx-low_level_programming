@@ -12,14 +12,9 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
 
 	printf("argc = %d\n", argc);
-	printf("Name is:\n");
+	printf("argv[0] = %s\n", argv[0]);
 
-	for (i = 0; i <= argc; i++)
-	{
-		printf("argc[%d] = %s\n", i, argv[i]);
-	}
 	return (0);
 }
