@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -10,10 +9,9 @@
   * Return: 0 (success)
   */
 
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
 
-	printf("argc = %d\n", argc);
 	printf("argv[0] = %s\n", argv[0]);
 
 	return (0);
