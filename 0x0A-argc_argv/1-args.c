@@ -3,8 +3,8 @@
 
 /**
   * main - Prints number of arguments passed
-  * @argc: first parameter
-  * @argv: second parameter
+  * @argc: argument count
+  * @argv: pointer to arguments
   *
   * Return: 0
   */
