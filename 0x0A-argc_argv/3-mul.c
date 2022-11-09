@@ -17,14 +17,14 @@ int main(int argc, char *argv[])
 	b = atoi(argv[2]);
 
 	printf("argc = %d\n", argc);
-	if (argc != 3)
+	if (argc == 3)
 	{
-		printf("Error\n");
-		return (1);
+		printf("Total = %d\n", a * b);
 	}
 	else
 	{
-		printf("Total = %d\n", a * b);
+		printf("Error\n");
+		return (1);
 	}
 
 	return (0);
