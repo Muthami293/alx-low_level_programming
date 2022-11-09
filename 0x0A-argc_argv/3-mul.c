@@ -13,24 +13,23 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	int mul = 1;
+	int a, b;
+	a = atoi(argv[1]);
+	b = atoi(argv[2]);
 
 	printf("argc = %d\n", argc);
-
-	for (i = 1; i < argc; i++)
+	for (i = 0; i < argc; i++)
 	{
-		if (argc != 2)
+		if (argc != 3)
 		{
 			printf("Error\n");
 			return (1);
 		}
 		else
 		{
-			printf("%s\n", argv[i]);
-			mul = mul * atoi(argv[i]);
+			printf("Total = %d\n", a * b);
 		}
-		printf("Total =%d\n", mul);
-	}
 
+	}
 	return (0);
 }
