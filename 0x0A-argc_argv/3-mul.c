@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 {
 	int i;
 	int mul = 1;
-	
+
 	printf("argc = %d\n", argc);
 
 	for (i = 1; i < argc; i++)
