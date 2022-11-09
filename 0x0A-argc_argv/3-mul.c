@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	printf("argc = %d\n", argc);
 	if (argc == 3)
 	{
-		printf("Total = %d\n", a * b);
+		printf("Total = %d\n", (a * b));
 	}
 	else
 	{
