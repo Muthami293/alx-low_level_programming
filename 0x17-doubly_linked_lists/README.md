@@ -1,1 +1,0 @@
-Doubluy-linked list
